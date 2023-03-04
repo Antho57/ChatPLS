@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Accueil from '../components/Accueil.vue';
-import Login from '../components/Login.vue';
+import Connexion from '../components/Connexion.vue';
+import Chat from '../components/Chat.vue';
 const routes = [
     {
         path: '/',
@@ -8,9 +9,14 @@ const routes = [
         component: Accueil
     },
     {
-        path: '/login',
-        name: 'Login',
-        component: Login
+        path: '/connexion',
+        name: 'Connexion',
+        component: Connexion
+    },
+    {
+        path: '/chat',
+        name: 'Chat',
+        component: Chat
     }
 ];
 

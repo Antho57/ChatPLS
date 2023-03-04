@@ -5,6 +5,10 @@ module.exports = {
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
+    ],
     theme: {
         extend: {
             screens: {
