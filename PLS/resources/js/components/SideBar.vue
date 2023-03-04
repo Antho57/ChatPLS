@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-gray-900 pt-5 pb-4">
+    <div class="flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-gray-900 pt-5 ">
         <div class="flex flex-shrink-0 items-center space-y-5 px-4">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="50 0 2300 500" class="fadeCircle">
                 <title>PLS ?</title>
@@ -22,18 +22,41 @@
             </svg>
         </div>
         <div class="mt-5 flex flex-grow flex-col">
-            <nav class="flex-1 space-y-1 bg-gray-900" aria-label="Sidebar">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" @click="selectDiscussion(item.id)" :class="[item.id === currentNav ? 'border-green-500 bg-green-50 text-green-500' : 'border-transparent text-gray-200 hover:bg-gray-800 hover:text-white', 'group flex items-center border-l-4 px-3 py-2 text-sm font-medium']">
+            <nav class="flex-1 space-y-1 bg-gray-900 h-72 max-h-80 overflow-scroll shadow-amber-400" aria-label="Sidebar" style="box-shadow: inset 0px -21px 15px -26px #7171FF;">
+                <a v-for="item in navigation" :key="item.name" :href="item.href" @click="selectDiscussion(item.id)" :class="[item.id === currentNav ? 'border-green-500 bg-green-200 text-green-500' : 'border-transparent text-gray-200 hover:bg-gray-800 hover:text-white', 'group flex items-center border-l-4 px-3 py-2 text-sm font-medium']">
                     <component :is="DocumentTextIcon" :class="[item.id === currentNav ? 'text-green-500' : 'text-gray-400 group-hover:text-gray-500', 'mr-3 h-6 w-6 flex-shrink-0']" aria-hidden="true" />
                     {{ item.name }}
                 </a>
             </nav>
         </div>
+        <div class="flex flex-shrink-0 bg-gray-700 p-4">
+            <div href="#" class=" block w-full flex-shrink-0">
+                <div class="flex items-center">
+
+                    <div class="w-1/4">
+                        <a href="/compte">
+                            <img class="inline-block h-9 w-9 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
+                        </a>
+                    </div>
+                    <div class=" w-2/4">
+                        <a href="/compte">
+                            <p class="text-sm font-medium text-white">Antho</p>
+                            <p class="text-xs font-medium text-gray-300 hover:text-gray-200">Voir profil</p>
+                        </a>
+                    </div>
+                    <div class="ml-3 w-1/4">
+                        <button type="button" @click="disconnecte()" class="group inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gray-600 hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600">
+                            <PowerIcon class="h-5 w-5 text-gray-500 group-hover:text-white" aria-hidden="true" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script setup>
-import { DocumentTextIcon, PencilSquareIcon } from '@heroicons/vue/24/outline'
+import { DocumentTextIcon, PencilSquareIcon, PowerIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <script>
@@ -51,14 +74,24 @@ export default {
                 { name: 'Calendar', href: '#', id: 3 },
                 { name: 'Documents', href: '#', id: 4 },
                 { name: 'Reports', href: '#', id: 5 },
+                { name: 'Dashboard', href: '#', id: 6 },
+                { name: 'Team', href: '#', id: 7 },
+                { name: 'Projects', href: '#', id: 8 },
+                { name: 'Calendar', href: '#', id: 9 },
+                { name: 'Documents', href: '#', id: 10 },
+                { name: 'Reports', href: '#', id: 11 },
             ]
         }
     },
     methods: {
         selectDiscussion(id) {
             this.currentNav = id;
+        },
+        disconnecte() {
+            this.$router.push({name: 'Accueil'});
         }
     },
+
 }
 </script>
 
@@ -69,7 +102,7 @@ svg textPath {
     font-family:  Hanson;
     text-transform: uppercase;
     letter-spacing: 6px;
-    fill: rgb(22 163 74);
+    fill: rgb(40, 188, 95);
     background: rgba(255, 255, 255, 0);
 }
 
