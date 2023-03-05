@@ -14,7 +14,7 @@
                         </svg>
                         <rect width="100%" height="100%" stroke-width="0" fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="absolute top-10 left-[calc(50%-4rem)] -z-10 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" width="1920" height="750" preserveAspectRatio="none" viewBox="0 0 1920 1080">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" class="absolute top-10 left-[calc(50%-4rem)] -z-10 w-[69.25rem] max-w-none transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]" width="1920" height="750" preserveAspectRatio="none" viewBox="0 0 1920 1080">
                         <g mask="url(&quot;#SvgjsMask1331&quot;)" fill="none">
                             <path d="M1807.72,300.446C1837.014,300.076,1854.085,269.895,1866.663,243.437C1877.167,221.343,1877.776,197.109,1867.374,174.966C1854.84,148.285,1837.188,118.712,1807.72,117.962C1777.536,117.194,1755.739,144.621,1742.566,171.79C1731.147,195.34,1734.319,221.609,1746.143,244.958C1759.522,271.377,1778.108,300.82,1807.72,300.446" fill="rgba(23, 108, 32, 1)" class="triangle-float1"></path>
                             <path d="M1387.29,734.919C1437.389,734.869,1487.152,714.411,1512.081,670.955C1536.906,627.68,1527.709,575.421,1503.957,531.548C1478.78,485.044,1440.041,444.175,1387.29,440.452C1328.21,436.282,1266.372,460.729,1238.123,512.785C1210.822,563.095,1230.16,623.682,1262.07,671.202C1290.053,712.873,1337.095,734.969,1387.29,734.919" fill="rgba(23, 108, 32, 1)" class="triangle-float2"></path>
@@ -51,7 +51,7 @@
                                     <textPath xlink:href="#textcircle" >PLS ? • PLS ? • PLS ? •</textPath>
                                 </text>
                             </svg>
-                            <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-8xl font-hanson overflow-hidden"><span class="titleSLide">PLS <span class="text-green-600">?</span></span></h1>
+                            <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-8xl font-hanson overflow-hidden"><span class="titleSLide">PLS <span class="text-green-500">?</span></span></h1>
                             <p class="mt-6 text-2xl leading-8 text-gray-300 overflow-hidden"><span class="titleSLide2">Si t'a une question, demande à PLS y va t'diiiiiire</span></p>
                         </div>
                         <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-52 flex items-center">
@@ -327,7 +327,7 @@ svg textPath {
     font-family:  Hanson;
     text-transform: uppercase;
     letter-spacing: 6px;
-    fill: rgb(22 163 74);
+    fill: rgb(34 197 94);
     background: rgba(255, 255, 255, 0);
 }
 
@@ -378,13 +378,13 @@ svg textPath {
 button {
     position: relative;
     padding: 15px 38px;
-    background: rgb(22 163 74);
+    background: rgb(34 197 94);
     font-size: 20px;
     font-weight: 500;
     color: rgba(24, 24, 24, 0.99);
-    border: 3px solid rgb(22 163 74);
+    border: 3px solid rgb(34 197 94);
     border-radius: 8px;
-    box-shadow: 0 0 0 rgb(22 163 74);
+    box-shadow: 0 0 0 rgb(34 197 94);
     transition: all .3s ease-in-out;
 }
 
