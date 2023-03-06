@@ -1,5 +1,6 @@
 <template>
-    <div class="w-64 flex flex-grow flex-col overflow-y-auto border-r border-gray-200 bg-gray-900 pt-5 h-[92%]">
+    <div class="w-1/6 h-screen">
+    <div class="w-full flex flex-grow flex-col overflow-y-auto border-r border-gray-500 bg-gray-900 pt-5 h-[92%]">
         <div class="flex flex-shrink-0 items-center space-y-5 px-4">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="50 0 2300 500" class="fadeCircle">
                 <title>PLS ?</title>
@@ -56,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-grow flex-col border-r overflow-y-auto w-64 flex-shrink-0 bg-gray-700 p-4 h-[8%]">
+    <div class="w-full flex flex-grow flex-col border-r border-gray-500 overflow-y-auto w-64 flex-shrink-0 bg-gray-700 p-4 h-[8%]">
         <div href="#" class="min-h-fit block w-full flex-shrink-0">
             <div class="flex items-center">
                 <div class="w-1/4">
@@ -77,6 +78,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </template>
 
